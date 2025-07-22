@@ -39,3 +39,8 @@ Visitor --> API Gateway --> Lambda (Python) --> DynamoDB Tables
 ## Notes
 
 Budget set to $0.01 for zero-cost monitoring. Free Tier only resources used.
+
+## Screenshot
+
+<img width="2940" height="1402" alt="image" src="https://github.com/user-attachments/assets/1425252a-8aed-4753-a548-782f42b224ba" />
+
