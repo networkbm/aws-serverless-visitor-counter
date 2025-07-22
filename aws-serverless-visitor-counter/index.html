@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visitor Counter</title>
+</head>
+<body>
+    <h1>Thanks for stopping by!</h1>
+    <p>You are visitor number <span id="count">...</span></p>
+
+    <script>
+    fetch("https://266udvrjql.execute-api.us-east-1.amazonaws.com/visitor")
+        .then(res => res.json())
+        .then(data => {
+            document.getElementById("count").textContent = data.count;
+        })
+        .catch(() => {
+            document.getElementById("count").textContent = "error";
+        });
+    </script>
+</body>
+</html>
